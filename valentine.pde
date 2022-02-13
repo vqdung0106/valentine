@@ -2,7 +2,7 @@ public static final int px = 25;
 public static final int rectRad = 3;
 PFont font;
 
-public boolean[][] used;
+public boolean[][] used;// = new boolean[wth/px][ht/px];
 public int[] heart = {
                65, 66, 67,                 72, 73, 74,
            84, 85, 86, 87, 88,         91, 92, 93, 94, 95,
@@ -45,9 +45,9 @@ void draw() {
     return;
   } else if(frameCount == drawingframes + textframesdelay) {
     fill(63 + 32);
-    text("Dear Processing,", 10, 50);
-    text("Happy Valentine's Day!", 80, 200);
-    text("Love,\nAce", 10, 430);
+    text("Gửi bạn tui nhá,", 10, 50);
+    text("Happy Valentine's Day!", 100, 200);
+    text("^^", 250, 300);
     return;
   } else if(frameCount > drawingframes) {
       return; // effectively creating a small delay after drawing the tiles
@@ -58,8 +58,8 @@ void draw() {
   int B = (int)random(128, 255);
   int alpha = (int)random(55, 85);
   int hash = j * width / px + i;
-  if(java.util.Arrays.binarySearch(heart,hash)>=0) {
-  //if(heart.indexOf(hash) >= 0) {
+  //if(java.util.Arrays.binarySearch(heart,hash)>=0) {
+  if(heart.indexOf(hash) >= 0) {
     R = (int)random(128 + 64, 255);
     G = (int)random(0, 63);
     B = (int)random(0, 63);
