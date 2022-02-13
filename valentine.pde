@@ -45,9 +45,9 @@ void draw() {
     return;
   } else if(frameCount == drawingframes + textframesdelay) {
     fill(63 + 32);
-    text("Dear Processing,", 10, 50);
-    text("Happy Valentine's Day!", 80, 200);
-    text("Love,\nAce", 10, 430);
+    text("Dear Nhóc,", 10, 50);
+    text("Happy Valentine's Day!", 100, 200);
+    text("Love,\nhihi^^", 10, 430);
     return;
   } else if(frameCount > drawingframes) {
       return; // effectively creating a small delay after drawing the tiles
