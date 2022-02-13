@@ -47,8 +47,8 @@ void draw() {
     fill(63 + 32);
     text("Gửi bạn của tui nhá,", 10, 50);
     text("Happy Valentine's Day!", 100, 200);
-    text("FTUER <3", 240, 240);
-    text("^^", 245, 280);
+    text("FTUER <3", 175, 240);
+    text("^^", 240, 280);
     return;
   } else if(frameCount > drawingframes) {
       return; // effectively creating a small delay after drawing the tiles
